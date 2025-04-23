@@ -1,11 +1,13 @@
 workflows:
-  flutter-apk:
-    name: Flutter APK Build
+  build-android:
+    name: Build Android APK
     max_build_duration: 15
     environment:
       flutter: stable
     scripts:
-      - flutter pub get
-      - flutter build apk --release
+      - name: Get dependencies
+        script: flutter pub get
+      - name: Build APK
+        script: flutter build apk --release
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
