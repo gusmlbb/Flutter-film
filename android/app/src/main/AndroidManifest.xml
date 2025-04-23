@@ -4,7 +4,8 @@
     <application
         android:label="film_app"
         android:icon="@mipmap/ic_launcher">
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
